@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77F9DF0425FD7F4900593269 /* Medication_AutocompleteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9DF0325FD7F4900593269 /* Medication_AutocompleteApp.swift */; };
+		77F9DF0625FD7F4900593269 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9DF0525FD7F4900593269 /* ContentView.swift */; };
+		77F9DF0825FD7F4C00593269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77F9DF0725FD7F4C00593269 /* Assets.xcassets */; };
+		77F9DF0B25FD7F4C00593269 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77F9DF0A25FD7F4C00593269 /* Preview Assets.xcassets */; };
+		77F9DF1625FD7F4C00593269 /* Medication_AutocompleteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9DF1525FD7F4C00593269 /* Medication_AutocompleteTests.swift */; };
+		77F9DF2125FD7F4C00593269 /* Medication_AutocompleteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9DF2025FD7F4C00593269 /* Medication_AutocompleteUITests.swift */; };
+		77F9DF3225FD7FE700593269 /* MedicationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9DF3125FD7FE700593269 /* MedicationsViewModel.swift */; };
+		77F9DF3725FD801500593269 /* medications.csv in Resources */ = {isa = PBXBuildFile; fileRef = 77F9DF3625FD801500593269 /* medications.csv */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77F9DF1225FD7F4C00593269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77F9DEF825FD7F4900593269 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77F9DEFF25FD7F4900593269;
+			remoteInfo = "Medication-Autocomplete";
+		};
+		77F9DF1D25FD7F4C00593269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77F9DEF825FD7F4900593269 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77F9DEFF25FD7F4900593269;
+			remoteInfo = "Medication-Autocomplete";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		77F9DF0025FD7F4900593269 /* Medication-Autocomplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Medication-Autocomplete.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F9DF0325FD7F4900593269 /* Medication_AutocompleteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication_AutocompleteApp.swift; sourceTree = "<group>"; };
+		77F9DF0525FD7F4900593269 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		77F9DF0725FD7F4C00593269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77F9DF0A25FD7F4C00593269 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		77F9DF0C25FD7F4C00593269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77F9DF1125FD7F4C00593269 /* Medication-AutocompleteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Medication-AutocompleteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F9DF1525FD7F4C00593269 /* Medication_AutocompleteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication_AutocompleteTests.swift; sourceTree = "<group>"; };
+		77F9DF1725FD7F4C00593269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77F9DF1C25FD7F4C00593269 /* Medication-AutocompleteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Medication-AutocompleteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F9DF2025FD7F4C00593269 /* Medication_AutocompleteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication_AutocompleteUITests.swift; sourceTree = "<group>"; };
+		77F9DF2225FD7F4C00593269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77F9DF3125FD7FE700593269 /* MedicationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationsViewModel.swift; sourceTree = "<group>"; };
+		77F9DF3625FD801500593269 /* medications.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = medications.csv; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77F9DEFD25FD7F4900593269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77F9DF0E25FD7F4C00593269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77F9DF1925FD7F4C00593269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77F9DEF725FD7F4900593269 = {
+			isa = PBXGroup;
+			children = (
+				77F9DF0225FD7F4900593269 /* Medication-Autocomplete */,
+				77F9DF1425FD7F4C00593269 /* Medication-AutocompleteTests */,
+				77F9DF1F25FD7F4C00593269 /* Medication-AutocompleteUITests */,
+				77F9DF0125FD7F4900593269 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77F9DF0125FD7F4900593269 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77F9DF0025FD7F4900593269 /* Medication-Autocomplete.app */,
+				77F9DF1125FD7F4C00593269 /* Medication-AutocompleteTests.xctest */,
+				77F9DF1C25FD7F4C00593269 /* Medication-AutocompleteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77F9DF0225FD7F4900593269 /* Medication-Autocomplete */ = {
+			isa = PBXGroup;
+			children = (
+				77F9DF0325FD7F4900593269 /* Medication_AutocompleteApp.swift */,
+				77F9DF0525FD7F4900593269 /* ContentView.swift */,
+				77F9DF3625FD801500593269 /* medications.csv */,
+				77F9DF0725FD7F4C00593269 /* Assets.xcassets */,
+				77F9DF0C25FD7F4C00593269 /* Info.plist */,
+				77F9DF0925FD7F4C00593269 /* Preview Content */,
+				77F9DF3125FD7FE700593269 /* MedicationsViewModel.swift */,
+			);
+			path = "Medication-Autocomplete";
+			sourceTree = "<group>";
+		};
+		77F9DF0925FD7F4C00593269 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				77F9DF0A25FD7F4C00593269 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		77F9DF1425FD7F4C00593269 /* Medication-AutocompleteTests */ = {
+			isa = PBXGroup;
+			children = (
+				77F9DF1525FD7F4C00593269 /* Medication_AutocompleteTests.swift */,
+				77F9DF1725FD7F4C00593269 /* Info.plist */,
+			);
+			path = "Medication-AutocompleteTests";
+			sourceTree = "<group>";
+		};
+		77F9DF1F25FD7F4C00593269 /* Medication-AutocompleteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				77F9DF2025FD7F4C00593269 /* Medication_AutocompleteUITests.swift */,
+				77F9DF2225FD7F4C00593269 /* Info.plist */,
+			);
+			path = "Medication-AutocompleteUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77F9DEFF25FD7F4900593269 /* Medication-Autocomplete */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77F9DF2525FD7F4C00593269 /* Build configuration list for PBXNativeTarget "Medication-Autocomplete" */;
+			buildPhases = (
+				77F9DEFC25FD7F4900593269 /* Sources */,
+				77F9DEFD25FD7F4900593269 /* Frameworks */,
+				77F9DEFE25FD7F4900593269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Medication-Autocomplete";
+			productName = "Medication-Autocomplete";
+			productReference = 77F9DF0025FD7F4900593269 /* Medication-Autocomplete.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77F9DF1025FD7F4C00593269 /* Medication-AutocompleteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77F9DF2825FD7F4C00593269 /* Build configuration list for PBXNativeTarget "Medication-AutocompleteTests" */;
+			buildPhases = (
+				77F9DF0D25FD7F4C00593269 /* Sources */,
+				77F9DF0E25FD7F4C00593269 /* Frameworks */,
+				77F9DF0F25FD7F4C00593269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77F9DF1325FD7F4C00593269 /* PBXTargetDependency */,
+			);
+			name = "Medication-AutocompleteTests";
+			productName = "Medication-AutocompleteTests";
+			productReference = 77F9DF1125FD7F4C00593269 /* Medication-AutocompleteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77F9DF1B25FD7F4C00593269 /* Medication-AutocompleteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77F9DF2B25FD7F4C00593269 /* Build configuration list for PBXNativeTarget "Medication-AutocompleteUITests" */;
+			buildPhases = (
+				77F9DF1825FD7F4C00593269 /* Sources */,
+				77F9DF1925FD7F4C00593269 /* Frameworks */,
+				77F9DF1A25FD7F4C00593269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77F9DF1E25FD7F4C00593269 /* PBXTargetDependency */,
+			);
+			name = "Medication-AutocompleteUITests";
+			productName = "Medication-AutocompleteUITests";
+			productReference = 77F9DF1C25FD7F4C00593269 /* Medication-AutocompleteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77F9DEF825FD7F4900593269 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					77F9DEFF25FD7F4900593269 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					77F9DF1025FD7F4C00593269 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 77F9DEFF25FD7F4900593269;
+					};
+					77F9DF1B25FD7F4C00593269 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 77F9DEFF25FD7F4900593269;
+					};
+				};
+			};
+			buildConfigurationList = 77F9DEFB25FD7F4900593269 /* Build configuration list for PBXProject "Medication-Autocomplete" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77F9DEF725FD7F4900593269;
+			productRefGroup = 77F9DF0125FD7F4900593269 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77F9DEFF25FD7F4900593269 /* Medication-Autocomplete */,
+				77F9DF1025FD7F4C00593269 /* Medication-AutocompleteTests */,
+				77F9DF1B25FD7F4C00593269 /* Medication-AutocompleteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77F9DEFE25FD7F4900593269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F9DF3725FD801500593269 /* medications.csv in Resources */,
+				77F9DF0B25FD7F4C00593269 /* Preview Assets.xcassets in Resources */,
+				77F9DF0825FD7F4C00593269 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77F9DF0F25FD7F4C00593269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77F9DF1A25FD7F4C00593269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77F9DEFC25FD7F4900593269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F9DF0625FD7F4900593269 /* ContentView.swift in Sources */,
+				77F9DF3225FD7FE700593269 /* MedicationsViewModel.swift in Sources */,
+				77F9DF0425FD7F4900593269 /* Medication_AutocompleteApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77F9DF0D25FD7F4C00593269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F9DF1625FD7F4C00593269 /* Medication_AutocompleteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77F9DF1825FD7F4C00593269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F9DF2125FD7F4C00593269 /* Medication_AutocompleteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77F9DF1325FD7F4C00593269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77F9DEFF25FD7F4900593269 /* Medication-Autocomplete */;
+			targetProxy = 77F9DF1225FD7F4C00593269 /* PBXContainerItemProxy */;
+		};
+		77F9DF1E25FD7F4C00593269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77F9DEFF25FD7F4900593269 /* Medication-Autocomplete */;
+			targetProxy = 77F9DF1D25FD7F4C00593269 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		77F9DF2325FD7F4C00593269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77F9DF2425FD7F4C00593269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77F9DF2625FD7F4C00593269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Medication-Autocomplete/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Medication-Autocomplete/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vishnuravi.Medication-Autocomplete";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77F9DF2725FD7F4C00593269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Medication-Autocomplete/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Medication-Autocomplete/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vishnuravi.Medication-Autocomplete";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		77F9DF2925FD7F4C00593269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Medication-AutocompleteTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vishnuravi.Medication-AutocompleteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Medication-Autocomplete.app/Medication-Autocomplete";
+			};
+			name = Debug;
+		};
+		77F9DF2A25FD7F4C00593269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Medication-AutocompleteTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vishnuravi.Medication-AutocompleteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Medication-Autocomplete.app/Medication-Autocomplete";
+			};
+			name = Release;
+		};
+		77F9DF2C25FD7F4C00593269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Medication-AutocompleteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vishnuravi.Medication-AutocompleteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Medication-Autocomplete";
+			};
+			name = Debug;
+		};
+		77F9DF2D25FD7F4C00593269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Medication-AutocompleteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vishnuravi.Medication-AutocompleteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Medication-Autocomplete";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77F9DEFB25FD7F4900593269 /* Build configuration list for PBXProject "Medication-Autocomplete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77F9DF2325FD7F4C00593269 /* Debug */,
+				77F9DF2425FD7F4C00593269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77F9DF2525FD7F4C00593269 /* Build configuration list for PBXNativeTarget "Medication-Autocomplete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77F9DF2625FD7F4C00593269 /* Debug */,
+				77F9DF2725FD7F4C00593269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77F9DF2825FD7F4C00593269 /* Build configuration list for PBXNativeTarget "Medication-AutocompleteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77F9DF2925FD7F4C00593269 /* Debug */,
+				77F9DF2A25FD7F4C00593269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77F9DF2B25FD7F4C00593269 /* Build configuration list for PBXNativeTarget "Medication-AutocompleteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77F9DF2C25FD7F4C00593269 /* Debug */,
+				77F9DF2D25FD7F4C00593269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77F9DEF825FD7F4900593269 /* Project object */;
+}
