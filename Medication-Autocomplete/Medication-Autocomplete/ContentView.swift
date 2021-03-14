@@ -23,7 +23,7 @@ struct ContentView: View {
                 VStack(alignment: .center) {
                     VStack {
                         HStack {
-                            TextField("Enter a medication name...", text: $medicationsModel.searchText).padding()
+                            ClearableTextField(placeholder: "Enter a medication name...", text: $medicationsModel.searchText).padding()
                             Button(action: {
                                 if (!self.medicationsModel.searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty) {
                                     self.medications.append(self.medicationsModel.searchText)

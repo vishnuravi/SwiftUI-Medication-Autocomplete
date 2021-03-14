@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77B30AC625FD8434006CD423 /* ClearableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B30AC525FD8434006CD423 /* ClearableTextField.swift */; };
 		77F9DF0425FD7F4900593269 /* Medication_AutocompleteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9DF0325FD7F4900593269 /* Medication_AutocompleteApp.swift */; };
 		77F9DF0625FD7F4900593269 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9DF0525FD7F4900593269 /* ContentView.swift */; };
 		77F9DF0825FD7F4C00593269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77F9DF0725FD7F4C00593269 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77B30AC525FD8434006CD423 /* ClearableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearableTextField.swift; sourceTree = "<group>"; };
 		77F9DF0025FD7F4900593269 /* Medication-Autocomplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Medication-Autocomplete.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F9DF0325FD7F4900593269 /* Medication_AutocompleteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication_AutocompleteApp.swift; sourceTree = "<group>"; };
 		77F9DF0525FD7F4900593269 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				77F9DF0C25FD7F4C00593269 /* Info.plist */,
 				77F9DF0925FD7F4C00593269 /* Preview Content */,
 				77F9DF3125FD7FE700593269 /* MedicationsViewModel.swift */,
+				77B30AC525FD8434006CD423 /* ClearableTextField.swift */,
 			);
 			path = "Medication-Autocomplete";
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				77F9DF0625FD7F4900593269 /* ContentView.swift in Sources */,
 				77F9DF3225FD7FE700593269 /* MedicationsViewModel.swift in Sources */,
 				77F9DF0425FD7F4900593269 /* Medication_AutocompleteApp.swift in Sources */,
+				77B30AC625FD8434006CD423 /* ClearableTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
