@@ -27,8 +27,10 @@ class MedicationsViewModel: ObservableObject {
         self.publisher = $searchText
             .receive(on: RunLoop.main)
             .sink(receiveValue: { (str) in
-                if self.searchText.count > 1  {
-                    self.filteredMedications = self.allMedications.filter { $0.lowercased().contains(str.lowercased()) }
+                if self.searchText.count > 2  {
+                    self.filteredMedications = self.allMedications
+                        .filter { $0.lowercased().contains(str.lowercased()) }
+                        .sorted { ($0.lowercased().hasPrefix(str.lowercased()) ? 0 : 1) < ($1.lowercased().hasPrefix(str.lowercased()) ? 0 : 1)}
                 }else{
                     self.filteredMedications = []
                 }

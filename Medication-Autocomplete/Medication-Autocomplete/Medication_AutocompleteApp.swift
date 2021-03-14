@@ -11,7 +11,7 @@ import SwiftUI
 struct Medication_AutocompleteApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MedicationSelector()
         }
     }
 }

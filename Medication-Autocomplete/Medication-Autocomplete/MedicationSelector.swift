@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MedicationSelector.swift
 //  Medication-Autocomplete
 //
 //  Created by Vishnu Ravi on 3/13/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MedicationSelector: View {
     
     @ObservedObject var medicationsModel = MedicationsViewModel()
     
@@ -17,13 +17,27 @@ struct ContentView: View {
         self.medications.remove(atOffsets: offsets)
     }
     
+    func highlightedText(str: String, searched: String) -> Text {
+        guard !str.isEmpty && !searched.isEmpty else { return Text(str) }
+        
+        var result: Text!
+        let parts = str.components(separatedBy: searched)
+        for i in parts.indices {
+            result = (result == nil ? Text(parts[i]) : result + Text(parts[i]))
+            if i != parts.count - 1 {
+                result = result + Text(searched).bold()
+            }
+        }
+        return result ?? Text(str)
+    }
+    
     var body: some View {
         ZStack {
             VStack(alignment: .center) {
                 VStack(alignment: .center) {
                     VStack {
                         HStack {
-                            ClearableTextField(placeholder: "Enter a medication name...", text: $medicationsModel.searchText).padding()
+                            ClearableTextField(placeholder: "Enter a medication name...", text: $medicationsModel.searchText).autocapitalization(.none).padding()
                             Button(action: {
                                 if (!self.medicationsModel.searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty) {
                                     self.medications.append(self.medicationsModel.searchText)
@@ -46,7 +60,7 @@ struct ContentView: View {
                                             Button(action: {
                                                 self.medications.append(medication)
                                             }){
-                                                Text(medication)
+                                                highlightedText(str: medication.lowercased(), searched: self.medicationsModel.searchText.lowercased())
                                             }
                                         }
                                     }.frame(height: CGFloat(medicationsModel.filteredMedications.count * 50))
@@ -75,8 +89,8 @@ struct ContentView: View {
     }
     }
     
-    struct ContentView_Previews: PreviewProvider {
+    struct MedicationSelector_Previews: PreviewProvider {
         static var previews: some View {
-            ContentView()
+            MedicationSelector()
         }
     }

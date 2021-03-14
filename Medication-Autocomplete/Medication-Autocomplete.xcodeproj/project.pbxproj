@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		77B30AC625FD8434006CD423 /* ClearableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B30AC525FD8434006CD423 /* ClearableTextField.swift */; };
 		77F9DF0425FD7F4900593269 /* Medication_AutocompleteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9DF0325FD7F4900593269 /* Medication_AutocompleteApp.swift */; };
-		77F9DF0625FD7F4900593269 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9DF0525FD7F4900593269 /* ContentView.swift */; };
+		77F9DF0625FD7F4900593269 /* MedicationSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9DF0525FD7F4900593269 /* MedicationSelector.swift */; };
 		77F9DF0825FD7F4C00593269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77F9DF0725FD7F4C00593269 /* Assets.xcassets */; };
 		77F9DF0B25FD7F4C00593269 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77F9DF0A25FD7F4C00593269 /* Preview Assets.xcassets */; };
 		77F9DF1625FD7F4C00593269 /* Medication_AutocompleteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9DF1525FD7F4C00593269 /* Medication_AutocompleteTests.swift */; };
@@ -39,7 +39,7 @@
 		77B30AC525FD8434006CD423 /* ClearableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearableTextField.swift; sourceTree = "<group>"; };
 		77F9DF0025FD7F4900593269 /* Medication-Autocomplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Medication-Autocomplete.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F9DF0325FD7F4900593269 /* Medication_AutocompleteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication_AutocompleteApp.swift; sourceTree = "<group>"; };
-		77F9DF0525FD7F4900593269 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		77F9DF0525FD7F4900593269 /* MedicationSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationSelector.swift; sourceTree = "<group>"; };
 		77F9DF0725FD7F4C00593269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77F9DF0A25FD7F4C00593269 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		77F9DF0C25FD7F4C00593269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				77F9DF0325FD7F4900593269 /* Medication_AutocompleteApp.swift */,
-				77F9DF0525FD7F4900593269 /* ContentView.swift */,
+				77F9DF0525FD7F4900593269 /* MedicationSelector.swift */,
 				77F9DF3625FD801500593269 /* medications.csv */,
 				77F9DF0725FD7F4C00593269 /* Assets.xcassets */,
 				77F9DF0C25FD7F4C00593269 /* Info.plist */,
@@ -269,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77F9DF0625FD7F4900593269 /* ContentView.swift in Sources */,
+				77F9DF0625FD7F4900593269 /* MedicationSelector.swift in Sources */,
 				77F9DF3225FD7FE700593269 /* MedicationsViewModel.swift in Sources */,
 				77F9DF0425FD7F4900593269 /* Medication_AutocompleteApp.swift in Sources */,
 				77B30AC625FD8434006CD423 /* ClearableTextField.swift in Sources */,
