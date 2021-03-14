@@ -49,16 +49,17 @@ struct MedicationSelector: View {
                                     .frame(width: 45, height: 45)
                                     .shadow(radius: 15)
                             }.padding()
-                        }.padding(20)
+                        }.padding(.top)
                         
                         
-                        if !medicationsModel.filteredMedications.isEmpty {
+                        if !medicationsModel.filteredMedications.isEmpty && !(medicationsModel.searchText == "") {
                             ScrollView {
                                 VStack(alignment: .leading){
                                     List {
                                         ForEach(medicationsModel.filteredMedications, id: \.self) { medication in
                                             Button(action: {
                                                 self.medications.append(medication)
+                                                self.medicationsModel.searchText = ""
                                             }){
                                                 highlightedText(str: medication.lowercased(), searched: self.medicationsModel.searchText.lowercased())
                                             }
@@ -73,7 +74,6 @@ struct MedicationSelector: View {
                         }
                     }
                     
-                    Spacer()
                     List{
                         ForEach(self.medications, id: \.self){ medication in
                             Text(medication)
