@@ -11,6 +11,7 @@ struct Medication: Hashable, Equatable, Codable {
     var id: String
     var name: String
     var dosage: String
+    var unit: String
     var frequency: String
     var schedule: String
     
@@ -22,10 +23,11 @@ struct Medication: Hashable, Equatable, Codable {
         return lhs.id == rhs.id
     }
     
-    init(id: String = UUID().uuidString, name: String = "", dosage: String = "", frequency: String = "", schedule: String = ""){
+    init(id: String = UUID().uuidString, name: String = "", dosage: String = "", unit: String = "", frequency: String = "", schedule: String = ""){
         self.id = id
         self.name = name
         self.dosage = dosage
+        self.unit = unit
         self.frequency = frequency
         self.schedule = schedule
     }

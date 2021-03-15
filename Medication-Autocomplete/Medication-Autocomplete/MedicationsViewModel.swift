@@ -19,6 +19,10 @@ class MedicationsViewModel: ObservableObject {
     var filteredMedications: [String] = [String]()
     var publisher: AnyCancellable?
     
+    func clearSearch() -> Void {
+        self.searchText = ""
+    }
+    
     init() {
         
         if let medicationsURL = Bundle.main.url(forResource: "medications", withExtension: "csv") {

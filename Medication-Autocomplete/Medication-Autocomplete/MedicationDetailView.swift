@@ -34,6 +34,7 @@ struct MedicationDetailView: View {
                         Section(header: Text("Dosage")) {
                             HStack{
                                 TextField("Quantity", text: $selectedDosage)
+                                    .keyboardType(.decimalPad)
                                 Picker("Unit", selection: $selectedUnit){
                                     ForEach(units, id: \.self){
                                         Text($0)
@@ -62,8 +63,8 @@ struct MedicationDetailView: View {
             Spacer()
             HStack {
                 Button("Add this Medication"){
-                    self.medicationsViewModel.medications.append(Medication(name: self.medicationsViewModel.selectedMedication, dosage: selectedDosage, frequency: selectedFrequency, schedule: selectedDays))
-                    self.medicationsViewModel.searchText = ""
+                    self.medicationsViewModel.medications.append(Medication(name: self.medicationsViewModel.selectedMedication, dosage: selectedDosage, unit: selectedUnit, frequency: selectedFrequency, schedule: selectedDays))
+                    self.medicationsViewModel.clearSearch()
                 }
                 .padding()
                 .foregroundColor(Color.white)
@@ -73,7 +74,7 @@ struct MedicationDetailView: View {
                 .opacity(self.isNotValidated ? 0.5 : 1)
                 
                 Button("Cancel"){
-                    self.medicationsViewModel.searchText = ""
+                    self.medicationsViewModel.clearSearch()
                 }
                 .padding()
                 .foregroundColor(Color.white)

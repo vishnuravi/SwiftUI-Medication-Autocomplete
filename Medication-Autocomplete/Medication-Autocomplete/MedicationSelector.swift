@@ -37,7 +37,7 @@ struct MedicationSelector: View {
                     }.padding(.top)
                     
                     
-                    if !medicationsViewModel.filteredMedications.isEmpty && !(medicationsViewModel.searchText == "") {
+                    if !medicationsViewModel.filteredMedications.isEmpty && !(medicationsViewModel.searchText.isEmpty) {
                          ScrollView {
                               VStack(alignment: .leading){
                                    List {
@@ -69,7 +69,7 @@ struct MedicationSelector: View {
                          ForEach(self.medicationsViewModel.medications, id: \.self){ medication in
                               VStack(alignment: .leading, spacing: 0) {
                                    Text(medication.name.uppercased()).font(.headline)
-                                   Text("Take \(medication.dosage) \(medication.frequency), \(medication.schedule)").font(.subheadline)
+                                   Text("Take \(medication.dosage) \(medication.unit) \(medication.frequency), \(medication.schedule)").font(.subheadline)
                               }
                          }.onDelete(perform: delete)
                     }
