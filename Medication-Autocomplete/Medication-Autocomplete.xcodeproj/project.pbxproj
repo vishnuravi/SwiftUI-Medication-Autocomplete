@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		770EDB2225FEE05700C251F8 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770EDB2125FEE05700C251F8 /* Medication.swift */; };
+		7765360F25FF532400B0BEEC /* MedicationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7765360E25FF532400B0BEEC /* MedicationDetailView.swift */; };
 		77B30AC625FD8434006CD423 /* ClearableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B30AC525FD8434006CD423 /* ClearableTextField.swift */; };
 		77F9DF0425FD7F4900593269 /* Medication_AutocompleteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9DF0325FD7F4900593269 /* Medication_AutocompleteApp.swift */; };
 		77F9DF0625FD7F4900593269 /* MedicationSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9DF0525FD7F4900593269 /* MedicationSelector.swift */; };
@@ -36,10 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		770EDB2125FEE05700C251F8 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		7765360E25FF532400B0BEEC /* MedicationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationDetailView.swift; sourceTree = "<group>"; };
 		77B30AC525FD8434006CD423 /* ClearableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearableTextField.swift; sourceTree = "<group>"; };
 		77F9DF0025FD7F4900593269 /* Medication-Autocomplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Medication-Autocomplete.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F9DF0325FD7F4900593269 /* Medication_AutocompleteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication_AutocompleteApp.swift; sourceTree = "<group>"; };
-		77F9DF0525FD7F4900593269 /* MedicationSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationSelector.swift; sourceTree = "<group>"; };
+		77F9DF0525FD7F4900593269 /* MedicationSelector.swift */ = {isa = PBXFileReference; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = MedicationSelector.swift; sourceTree = "<group>"; };
 		77F9DF0725FD7F4C00593269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77F9DF0A25FD7F4C00593269 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		77F9DF0C25FD7F4C00593269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,12 +107,14 @@
 			children = (
 				77F9DF0325FD7F4900593269 /* Medication_AutocompleteApp.swift */,
 				77F9DF0525FD7F4900593269 /* MedicationSelector.swift */,
+				7765360E25FF532400B0BEEC /* MedicationDetailView.swift */,
+				77F9DF3125FD7FE700593269 /* MedicationsViewModel.swift */,
 				77F9DF3625FD801500593269 /* medications.csv */,
 				77F9DF0725FD7F4C00593269 /* Assets.xcassets */,
 				77F9DF0C25FD7F4C00593269 /* Info.plist */,
 				77F9DF0925FD7F4C00593269 /* Preview Content */,
-				77F9DF3125FD7FE700593269 /* MedicationsViewModel.swift */,
 				77B30AC525FD8434006CD423 /* ClearableTextField.swift */,
+				770EDB2125FEE05700C251F8 /* Medication.swift */,
 			);
 			path = "Medication-Autocomplete";
 			sourceTree = "<group>";
@@ -269,7 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770EDB2225FEE05700C251F8 /* Medication.swift in Sources */,
 				77F9DF0625FD7F4900593269 /* MedicationSelector.swift in Sources */,
+				7765360F25FF532400B0BEEC /* MedicationDetailView.swift in Sources */,
 				77F9DF3225FD7FE700593269 /* MedicationsViewModel.swift in Sources */,
 				77F9DF0425FD7F4900593269 /* Medication_AutocompleteApp.swift in Sources */,
 				77B30AC625FD8434006CD423 /* ClearableTextField.swift in Sources */,

@@ -10,7 +10,10 @@ import Combine
 
 class MedicationsViewModel: ObservableObject {
     
-    @Published var searchText = ""
+    @Published var searchText: String = ""
+    @Published var selectedMedication: String = ""
+    @Published var medications: [Medication] = [Medication]()
+    @Published var isShowingMedicationDetailView: Bool = false
     
     var allMedications: [String] = [String]()
     var filteredMedications: [String] = [String]()
