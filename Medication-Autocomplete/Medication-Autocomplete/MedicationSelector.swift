@@ -34,16 +34,6 @@ struct MedicationSelector: View {
                VStack {
                     HStack {
                          ClearableTextField(placeholder: "Enter a medication name...", text: $medicationsViewModel.searchText).autocapitalization(.none).padding()
-                         Button(action: {
-                              if (!self.medicationsViewModel.searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty) {
-                                   self.medicationsViewModel.searchText = ""
-                              }
-                         }){
-                              Image(systemName: "plus.circle.fill")
-                                   .resizable()
-                                   .frame(width: 45, height: 45)
-                                   .shadow(radius: 15)
-                         }.padding()
                     }.padding(.top)
                     
                     

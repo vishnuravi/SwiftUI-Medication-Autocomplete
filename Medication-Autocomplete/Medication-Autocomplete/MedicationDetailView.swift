@@ -78,9 +78,3 @@ struct MedicationDetailView: View {
         }.background(Color(UIColor.systemGray5))
     }
 }
-
-struct MedicationDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        MedicationDetailView()
-    }
-}
