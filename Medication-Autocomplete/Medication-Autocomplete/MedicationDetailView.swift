@@ -17,10 +17,10 @@ struct MedicationDetailView: View {
     var units: [String] = ["tablet(s)", "capsule(s)", "milliliters", "units", "grams", "milligrams"]
     
     @State private var selectedFrequency: String = ""
-    var frequency = ["once a day", "twice a day", "three times a day", "four times a day", "every 6 hours", "every 8 hours", "every 12 hours", "other"]
+    var frequency: [String] = ["once a day", "twice a day", "three times a day", "four times a day", "every 6 hours", "every 8 hours", "every 12 hours", "other"]
     
     @State private var selectedDays: String = ""
-    var days = ["every day", "every monday, wednesday, and friday", "every tuesday and thursday", "once a week", "other"]
+    var days: [String] = ["every day", "every monday, wednesday, and friday", "every tuesday and thursday", "once a week", "other"]
     
     private var isNotValidated: Bool {
         return self.selectedDays.isEmpty || self.selectedDosage.isEmpty || self.selectedUnit.isEmpty || self.selectedFrequency.isEmpty
@@ -55,7 +55,7 @@ struct MedicationDetailView: View {
                                 ForEach(days, id: \.self){
                                     Text($0)
                                 }
-                            }.scaledToFit()
+                            }
                         }
                     }.navigationTitle(self.medicationsViewModel.selectedMedication)
                 }
@@ -75,6 +75,7 @@ struct MedicationDetailView: View {
                 
                 Button("Cancel"){
                     self.medicationsViewModel.clearSearch()
+                    self.medicationsViewModel.isShowingMedicationDetailView.toggle()
                 }
                 .padding()
                 .foregroundColor(Color.white)
