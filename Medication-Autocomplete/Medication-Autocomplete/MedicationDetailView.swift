@@ -22,6 +22,10 @@ struct MedicationDetailView: View {
     @State private var selectedDays: String = ""
     var days = ["every day", "every monday, wednesday, and friday", "every tuesday and thursday", "once a week", "other"]
     
+    private var isNotValidated: Bool {
+        return self.selectedDays.isEmpty || self.selectedDosage.isEmpty || self.selectedUnit.isEmpty || self.selectedFrequency.isEmpty
+    }
+    
     var body: some View {
         VStack {
             VStack {
@@ -65,6 +69,8 @@ struct MedicationDetailView: View {
                 .foregroundColor(Color.white)
                 .background(Color.blue)
                 .cornerRadius(5)
+                .disabled(self.isNotValidated)
+                .opacity(self.isNotValidated ? 0.5 : 1)
                 
                 Button("Cancel"){
                     self.medicationsViewModel.searchText = ""
