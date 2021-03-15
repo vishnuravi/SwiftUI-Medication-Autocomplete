@@ -37,6 +37,7 @@ class MedicationsViewModel: ObservableObject {
                 if self.searchText.count > 2  {
                     self.filteredMedications = self.allMedications
                         .filter { $0.lowercased().contains(str.lowercased()) }
+                        .sorted(by: <)
                         .sorted { ($0.lowercased().hasPrefix(str.lowercased()) ? 0 : 1) < ($1.lowercased().hasPrefix(str.lowercased()) ? 0 : 1)}
                 }else{
                     self.filteredMedications = []
